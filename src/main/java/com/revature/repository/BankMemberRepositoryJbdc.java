@@ -4,11 +4,10 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
 
 import org.apache.log4j.Logger;
 
+import com.revature.exception.LoginException;
 import com.revature.model.BankMember;
 import com.revature.util.ConnectionUtil;
 
@@ -41,7 +40,7 @@ public class BankMemberRepositoryJbdc {
 		return false;
 	}
 	
-	public int recallUser(String username, String password) {
+	public static int recallUser(String username, String password) throws LoginException{
 		logger.trace("Getting all User");
 		int custID = 0;
 		try(Connection connection = ConnectionUtil.getConnection()){
@@ -61,8 +60,7 @@ public class BankMemberRepositoryJbdc {
 			return custID;
 		
 		}catch (SQLException e){
-			logger.error("Error connection to database BankMemberRepositoryJbdc.recallUser .");
+			throw new LoginException("Login Failed.");
 		}
-		return 0;
 	}
 }

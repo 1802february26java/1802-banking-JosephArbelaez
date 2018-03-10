@@ -1,23 +1,61 @@
 package banking;
 
-import org.apache.log4j.Logger;
-import org.junit.Before;
+import static org.junit.Assert.assertEquals;
 
-import com.revature.model.BankMember;
+import org.apache.log4j.Logger;
+import org.junit.Test;
+
+import com.revature.controller.Login;
+import com.revature.controller.Transactions;
+import com.revature.exception.LoginException;
 import com.revature.repository.BankMemberRepositoryJbdc;
 
 public class BankMemberDataAccessTest {
 
+	private static final Transactions transactions = new Transactions();
+	private static final Login loginClass = new Login();
 	private static Logger logger = Logger.getLogger(BankMemberDataAccessTest.class);
 	
-	private BankMemberRepositoryJbdc repository;
+	/*********************************************************
+	 * Detecting Users Tests
+	 * @throws LoginException 
+	 *********************************************************/
 	
-	// Mock Objects
-	private BankMember memberTest;
+	@Test
+	public void checkUser22() throws LoginException{
+		Object expected = 22;
+		assertEquals(expected, BankMemberRepositoryJbdc.recallUser("Xeroph", "Arbelaez"));
+	}
 	
-	//@Before
-	//public void setUp(){
-		//repository = BankMemberRepositoryJbdc.getInstance();
-		//memberTest = new BankMember(0, "Arbelaez", "Joseph", 10.0, "Jarbelaez", "password");
-	//}
+	@Test
+	public void checkUser41() throws LoginException{
+		Object expected = 41;
+		assertEquals(expected, BankMemberRepositoryJbdc.recallUser("Cow", "1"));
+	}
+	@Test
+	public void checkUser21() throws LoginException{
+		Object expected = 21;
+		assertEquals(expected, BankMemberRepositoryJbdc.recallUser("j", "j"));
+	}
+	
+	/*********************************************************
+	 * Check Balance Tests
+	 *********************************************************/
+	@Test
+	public void checkBalance22(){
+		Object expected = 0.0;
+		assertEquals(expected, Transactions.viewBalance(22));
+	}
+	
+	@Test
+	public void checkBalance21(){
+		Object expected = 0.0;
+		assertEquals(expected, Transactions.viewBalance(21));
+	}
+	
+	@Test
+	public void checkBalance41(){
+		Object expected = 61.0;
+		assertEquals(expected, Transactions.viewBalance(41));
+	}
 }

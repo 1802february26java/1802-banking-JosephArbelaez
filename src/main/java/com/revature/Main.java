@@ -6,6 +6,7 @@ import java.util.Scanner;
 import com.revature.controller.Database;
 import com.revature.controller.Login;
 import com.revature.controller.Transactions;
+import com.revature.exception.LoginException;
 import com.revature.model.BankMember;
 /** 
  * Create an instance of your controller and launch your application.
@@ -14,7 +15,7 @@ import com.revature.model.BankMember;
  */
 public class Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws LoginException {
 		Scanner scanner = new Scanner(System.in);
 		// Ask the user if they have an account.
 
@@ -28,7 +29,12 @@ public class Main {
 		}
 
 		// Either way they have to log in.
-		int custID = Login.login();
+		int custID;
+		try {
+			custID = Login.login();
+		} catch (LoginException e) {
+			throw new LoginException("Unable to login.");
+		}
 
 		// They select an transaction option.
 		int d = Transactions.option();

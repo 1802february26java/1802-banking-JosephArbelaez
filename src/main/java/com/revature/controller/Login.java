@@ -1,8 +1,6 @@
 package com.revature.controller;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
-
+import com.revature.exception.LoginException;
 import com.revature.model.BankMember;
 import com.revature.repository.BankMemberRepositoryJbdc;
 
@@ -12,20 +10,21 @@ public class Login {
 	
 	public static String createAccount(){
 		
-
 		System.out.println("*~*~*~*~*Arbelaez Bank*~*~*~*~*~*");
 		System.out.println("Returning customer?");
 		System.out.println("Y = Yes, N = No");
-		String newAccount = scanner.nextLine();
-		newAccount = newAccount.toLowerCase();
+		String newAccount;
+			newAccount = scanner.nextLine();
+			newAccount = newAccount.toLowerCase();
 
 		return newAccount;
 	}
 
-	public static int login(){
+	public static int login() throws LoginException{
 		String username = "";
 		String password = "";
 		String[] userCredentials = {username, password};
+		int custID = 0;
 
 		BankMemberRepositoryJbdc repository = new BankMemberRepositoryJbdc();
 			
@@ -35,7 +34,11 @@ public class Login {
 		userCredentials[0] = scanner.nextLine();
 		System.out.println("Enter your password.");
 		userCredentials[1] = scanner.nextLine();
-		int custID = repository.recallUser(userCredentials[0], userCredentials[1]);
+		try {
+			custID = repository.recallUser(userCredentials[0], userCredentials[1]);
+		} catch (LoginException e) {
+			throw new LoginException("Login Failed.");
+		}
 
 		return custID;
 	}

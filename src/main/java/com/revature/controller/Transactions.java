@@ -55,10 +55,11 @@ public class Transactions {
 		System.out.println("Thank you for visiting Arbelaez Bank!");
 	}
 	
-	public static void viewBalance(int custID){
+	public static double viewBalance(int custID){
 		double balance = Database.recallBalance(custID);
 		System.out.println("*~*~*~*~*~*Arbelaez Bank*~*~*~*~*~*");
 		System.out.println("Current Balance: " + balance);
+		return balance;
 	}
 	
 }

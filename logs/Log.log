@@ -1,0 +1,260 @@
+2018-03-09 16:14:17 ERROR ConnectionUtil:36 - Exception thrown while inserting new Celebrity.
+java.sql.SQLException: Missing IN or OUT parameter at index:: 6
+	at oracle.jdbc.driver.OraclePreparedStatement.processCompletedBindRow(OraclePreparedStatement.java:1878)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3815)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+	at com.revature.repository.BankMemberRepositoryJbdc.insert(BankMemberRepositoryJbdc.java:31)
+	at com.revature.controller.Login.newAccount(Login.java:67)
+	at com.revature.Main.main(Main.java:23)
+2018-03-09 16:26:44 ERROR ConnectionUtil:35 - Exception thrown while inserting new Celebrity.
+java.sql.SQLSyntaxErrorException: ORA-01722: invalid number
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:943)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1075)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+	at com.revature.repository.BankMemberRepositoryJbdc.insert(BankMemberRepositoryJbdc.java:30)
+	at com.revature.controller.Login.newAccount(Login.java:67)
+	at com.revature.Main.main(Main.java:23)
+2018-03-09 16:27:11 ERROR ConnectionUtil:35 - Exception thrown while inserting new Celebrity.
+java.sql.SQLSyntaxErrorException: ORA-01722: invalid number
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:943)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1075)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+	at com.revature.repository.BankMemberRepositoryJbdc.insert(BankMemberRepositoryJbdc.java:30)
+	at com.revature.controller.Login.newAccount(Login.java:67)
+	at com.revature.Main.main(Main.java:23)
+2018-03-09 16:29:36 ERROR ConnectionUtil:35 - Exception thrown while inserting new Celebrity.
+java.sql.SQLException: Invalid column index
+	at oracle.jdbc.driver.OraclePreparedStatement.setStringInternal(OraclePreparedStatement.java:5741)
+	at oracle.jdbc.driver.OraclePreparedStatement.setString(OraclePreparedStatement.java:5729)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.setString(OraclePreparedStatementWrapper.java:289)
+	at com.revature.repository.BankMemberRepositoryJbdc.insert(BankMemberRepositoryJbdc.java:26)
+	at com.revature.controller.Login.newAccount(Login.java:67)
+	at com.revature.Main.main(Main.java:23)
+2018-03-09 16:31:08 ERROR ConnectionUtil:35 - Exception thrown while inserting new Celebrity.
+java.sql.SQLIntegrityConstraintViolationException: ORA-01400: cannot insert NULL into ("JOSEPHARBELAEZ"."CUSTOMER"."CUSTOMER_ID")
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:943)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1075)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+	at com.revature.repository.BankMemberRepositoryJbdc.insert(BankMemberRepositoryJbdc.java:30)
+	at com.revature.controller.Login.newAccount(Login.java:67)
+	at com.revature.Main.main(Main.java:23)
+2018-03-09 21:56:15 ERROR ConnectionUtil:61 - Error while selecting all celebrities.
+2018-03-09 21:56:23 ERROR ConnectionUtil:33 - Error while selecting all celebrities.
+2018-03-09 22:00:00 TRACE ConnectionUtil:45 - Getting all User
+2018-03-09 22:00:03 TRACE ConnectionUtil:48 - Getting statement object in get all celebrities.
+2018-03-09 22:00:03 ERROR ConnectionUtil:61 - Error while selecting all celebrities.
+2018-03-09 22:03:15 TRACE ConnectionUtil:24 - Getting statement object in insert Celebrity.
+2018-03-09 22:03:15 TRACE ConnectionUtil:32 - Parameters for insertion of Celebrity set.
+2018-03-09 22:03:15 TRACE ConnectionUtil:35 - Member inserted sucessfully.
+2018-03-09 22:03:31 TRACE ConnectionUtil:45 - Getting all User
+2018-03-09 22:03:32 TRACE ConnectionUtil:48 - Getting statement object in get all celebrities.
+2018-03-09 22:03:32 ERROR ConnectionUtil:61 - Error while selecting all celebrities.
+2018-03-09 22:05:16 TRACE ConnectionUtil:45 - Getting all User
+2018-03-09 22:05:16 TRACE ConnectionUtil:48 - Getting statement object in get all celebrities.
+2018-03-09 22:05:17 TRACE ConnectionUtil:55 - Query executed successfully.
+2018-03-09 22:05:17 ERROR ConnectionUtil:61 - Error while selecting all celebrities.
+2018-03-09 22:06:44 TRACE ConnectionUtil:45 - Getting all User
+2018-03-09 22:06:45 TRACE ConnectionUtil:48 - Getting statement object in get all celebrities.
+2018-03-09 22:06:45 TRACE ConnectionUtil:55 - Query executed successfully.
+2018-03-09 22:06:45 ERROR ConnectionUtil:62 - Error while selecting all celebrities.
+2018-03-09 22:08:04 TRACE ConnectionUtil:45 - Getting all User
+2018-03-09 22:08:05 TRACE ConnectionUtil:48 - Getting statement object in get all celebrities.
+2018-03-09 22:08:05 TRACE ConnectionUtil:55 - Query executed successfully.
+2018-03-09 22:08:05 ERROR ConnectionUtil:62 - Error while selecting all celebrities.
+2018-03-09 22:16:42 TRACE ConnectionUtil:45 - Getting all User
+2018-03-09 22:16:43 TRACE ConnectionUtil:49 - Getting statement object in get all celebrities.
+2018-03-09 22:16:43 TRACE ConnectionUtil:56 - Query executed successfully.
+2018-03-09 22:16:43 TRACE ConnectionUtil:59 - CustID inserted correctly
+2018-03-09 22:16:58 TRACE ConnectionUtil:16 - Getting balance.
+2018-03-09 22:16:59 TRACE ConnectionUtil:21 - Getting statement object in get all celebrities.
+2018-03-09 22:16:59 ERROR ConnectionUtil:33 - Error while selecting all celebrities.
+2018-03-09 22:24:07 TRACE ConnectionUtil:45 - Getting all User
+2018-03-09 22:24:08 TRACE ConnectionUtil:49 - Getting statement object in get all celebrities.
+2018-03-09 22:24:09 TRACE ConnectionUtil:56 - Query executed successfully.
+2018-03-09 22:24:09 TRACE ConnectionUtil:59 - CustID inserted correctly
+2018-03-09 22:24:14 TRACE ConnectionUtil:16 - Getting balance.
+2018-03-09 22:24:14 TRACE ConnectionUtil:20 - Connection Successful
+2018-03-09 22:24:46 TRACE ConnectionUtil:40 - Changing balance.
+2018-03-09 22:24:46 TRACE ConnectionUtil:45 - Connection successful
+2018-03-09 22:24:46 TRACE ConnectionUtil:16 - Getting balance.
+2018-03-09 22:24:47 TRACE ConnectionUtil:20 - Connection Successful
+2018-03-09 22:27:17 TRACE ConnectionUtil:45 - Getting all User
+2018-03-09 22:27:18 TRACE ConnectionUtil:49 - Getting statement object in get all celebrities.
+2018-03-09 22:27:18 TRACE ConnectionUtil:56 - Query executed successfully.
+2018-03-09 22:27:18 TRACE ConnectionUtil:59 - CustID inserted correctly
+2018-03-09 22:27:23 TRACE ConnectionUtil:16 - Getting balance.
+2018-03-09 22:27:24 TRACE ConnectionUtil:20 - Connection Successful
+2018-03-09 22:28:21 TRACE ConnectionUtil:45 - Getting all User
+2018-03-09 22:28:22 TRACE ConnectionUtil:49 - Getting statement object in get all celebrities.
+2018-03-09 22:28:22 TRACE ConnectionUtil:56 - Query executed successfully.
+2018-03-09 22:28:22 TRACE ConnectionUtil:59 - CustID inserted correctly
+2018-03-09 22:28:24 TRACE ConnectionUtil:16 - Getting balance.
+2018-03-09 22:28:24 TRACE ConnectionUtil:20 - Connection Successful
+2018-03-09 22:28:26 TRACE ConnectionUtil:40 - Changing balance.
+2018-03-09 22:28:27 TRACE ConnectionUtil:45 - Connection successful
+2018-03-09 22:29:33 TRACE ConnectionUtil:45 - Getting all User
+2018-03-09 22:29:34 TRACE ConnectionUtil:49 - Getting statement object in get all celebrities.
+2018-03-09 22:29:34 TRACE ConnectionUtil:56 - Query executed successfully.
+2018-03-09 22:29:34 TRACE ConnectionUtil:59 - CustID inserted correctly
+2018-03-09 22:29:35 TRACE ConnectionUtil:16 - Getting balance.
+2018-03-09 22:29:36 TRACE ConnectionUtil:20 - Connection Successful
+2018-03-09 22:29:40 TRACE ConnectionUtil:40 - Changing balance.
+2018-03-09 22:29:40 TRACE ConnectionUtil:45 - Connection successful
+2018-03-09 22:31:06 TRACE ConnectionUtil:45 - Getting all User
+2018-03-09 22:31:07 TRACE ConnectionUtil:49 - Getting statement object in get all celebrities.
+2018-03-09 22:31:07 TRACE ConnectionUtil:56 - Query executed successfully.
+2018-03-09 22:31:07 TRACE ConnectionUtil:59 - CustID inserted correctly
+2018-03-09 22:31:31 TRACE ConnectionUtil:16 - Getting balance.
+2018-03-09 22:31:32 TRACE ConnectionUtil:20 - Connection Successful
+2018-03-09 22:31:33 TRACE ConnectionUtil:40 - Changing balance.
+2018-03-09 22:31:34 TRACE ConnectionUtil:45 - Connection successful
+2018-03-09 23:23:21 TRACE ConnectionUtil:45 - Getting all User
+2018-03-09 23:23:22 TRACE ConnectionUtil:49 - Getting statement object in get all celebrities.
+2018-03-09 23:23:22 TRACE ConnectionUtil:56 - Query executed successfully.
+2018-03-09 23:23:22 TRACE ConnectionUtil:59 - CustID inserted correctly
+2018-03-09 23:23:30 TRACE ConnectionUtil:16 - Getting balance.
+2018-03-09 23:23:30 TRACE ConnectionUtil:20 - Connection Successful
+2018-03-09 23:23:33 TRACE ConnectionUtil:40 - Changing balance.
+2018-03-09 23:23:33 TRACE ConnectionUtil:45 - Connection successful
+2018-03-09 23:23:33 TRACE ConnectionUtil:59 - Adding withdrawl transaction.
+2018-03-09 23:23:34 TRACE ConnectionUtil:65 - Connection successful
+2018-03-09 23:23:34 ERROR ConnectionUtil:78 - Error while updating queries.
+2018-03-09 23:25:30 TRACE ConnectionUtil:45 - Getting all User
+2018-03-09 23:25:31 TRACE ConnectionUtil:49 - Getting statement object in get all celebrities.
+2018-03-09 23:25:32 TRACE ConnectionUtil:56 - Query executed successfully.
+2018-03-09 23:25:32 TRACE ConnectionUtil:59 - CustID inserted correctly
+2018-03-09 23:25:36 TRACE ConnectionUtil:16 - Getting balance.
+2018-03-09 23:25:36 TRACE ConnectionUtil:20 - Connection Successful
+2018-03-09 23:25:38 TRACE ConnectionUtil:40 - Changing balance.
+2018-03-09 23:25:39 TRACE ConnectionUtil:45 - Connection successful
+2018-03-09 23:25:39 TRACE ConnectionUtil:59 - Adding withdrawl transaction.
+2018-03-09 23:25:39 TRACE ConnectionUtil:65 - Connection successful
+2018-03-09 23:25:39 TRACE ConnectionUtil:74 - Statement prepared successfully.
+2018-03-09 23:25:39 ERROR ConnectionUtil:79 - Error while updating queries Database.withdraawlTransaction
+2018-03-09 23:27:03 TRACE ConnectionUtil:45 - Getting all User
+2018-03-09 23:27:04 TRACE ConnectionUtil:49 - Getting statement object in get all celebrities.
+2018-03-09 23:27:04 TRACE ConnectionUtil:56 - Query executed successfully.
+2018-03-09 23:27:04 TRACE ConnectionUtil:59 - CustID inserted correctly
+2018-03-09 23:27:17 TRACE ConnectionUtil:16 - Getting balance.
+2018-03-09 23:27:17 TRACE ConnectionUtil:20 - Connection Successful
+2018-03-09 23:27:19 TRACE ConnectionUtil:40 - Changing balance.
+2018-03-09 23:27:20 TRACE ConnectionUtil:45 - Connection successful
+2018-03-09 23:27:20 TRACE ConnectionUtil:59 - Adding withdrawl transaction.
+2018-03-09 23:27:20 TRACE ConnectionUtil:65 - Connection successful
+2018-03-09 23:27:20 TRACE ConnectionUtil:74 - Statement prepared successfully
+2018-03-09 23:27:20 ERROR ConnectionUtil:79 - Error while updating queries Database.withdraawlTransaction
+2018-03-09 23:28:35 TRACE ConnectionUtil:45 - Getting all User
+2018-03-09 23:28:36 TRACE ConnectionUtil:49 - Getting statement object in get all celebrities.
+2018-03-09 23:28:36 TRACE ConnectionUtil:56 - Query executed successfully.
+2018-03-09 23:28:36 TRACE ConnectionUtil:59 - CustID inserted correctly
+2018-03-09 23:28:37 TRACE ConnectionUtil:16 - Getting balance.
+2018-03-09 23:28:37 TRACE ConnectionUtil:20 - Connection Successful
+2018-03-09 23:28:41 TRACE ConnectionUtil:40 - Changing balance.
+2018-03-09 23:28:41 TRACE ConnectionUtil:45 - Connection successful
+2018-03-09 23:28:41 TRACE ConnectionUtil:59 - Adding withdrawl transaction.
+2018-03-09 23:28:41 TRACE ConnectionUtil:65 - Connection successful
+2018-03-09 23:28:41 TRACE ConnectionUtil:74 - Statement prepared successfully
+2018-03-09 23:28:41 ERROR ConnectionUtil:79 - Error while updating queries Database.withdraawlTransaction
+2018-03-09 23:30:00 TRACE ConnectionUtil:45 - Getting all User
+2018-03-09 23:30:00 TRACE ConnectionUtil:49 - Getting statement object in get all celebrities.
+2018-03-09 23:30:01 TRACE ConnectionUtil:56 - Query executed successfully.
+2018-03-09 23:30:01 TRACE ConnectionUtil:59 - CustID inserted correctly
+2018-03-09 23:30:02 TRACE ConnectionUtil:16 - Getting balance.
+2018-03-09 23:30:02 TRACE ConnectionUtil:20 - Connection Successful
+2018-03-09 23:30:04 TRACE ConnectionUtil:40 - Changing balance.
+2018-03-09 23:30:04 TRACE ConnectionUtil:45 - Connection successful
+2018-03-09 23:30:05 TRACE ConnectionUtil:59 - Adding withdrawl transaction.
+2018-03-09 23:30:05 TRACE ConnectionUtil:65 - Connection successful
+2018-03-09 23:30:05 TRACE ConnectionUtil:74 - Statement prepared successfully
+2018-03-09 23:30:05 ERROR ConnectionUtil:79 - Error while updating queries Database.withdraawlTransaction
+2018-03-09 23:31:48 TRACE ConnectionUtil:45 - Getting all User
+2018-03-09 23:31:49 TRACE ConnectionUtil:49 - Getting statement object in get all celebrities.
+2018-03-09 23:31:49 TRACE ConnectionUtil:56 - Query executed successfully.
+2018-03-09 23:31:49 TRACE ConnectionUtil:59 - CustID inserted correctly
+2018-03-09 23:31:57 TRACE ConnectionUtil:16 - Getting balance.
+2018-03-09 23:31:57 TRACE ConnectionUtil:20 - Connection Successful
+2018-03-09 23:31:59 TRACE ConnectionUtil:40 - Changing balance.
+2018-03-09 23:32:00 TRACE ConnectionUtil:45 - Connection successful
+2018-03-09 23:32:00 TRACE ConnectionUtil:59 - Adding withdrawl transaction.
+2018-03-09 23:32:00 TRACE ConnectionUtil:65 - Connection successful
+2018-03-09 23:32:00 TRACE ConnectionUtil:74 - Statement prepared successfully
+2018-03-09 23:32:00 ERROR ConnectionUtil:79 - Error while updating queries Database.withdraawlTransaction
+2018-03-09 23:32:18 TRACE ConnectionUtil:45 - Getting all User
+2018-03-09 23:32:19 TRACE ConnectionUtil:49 - Getting statement object in get all celebrities.
+2018-03-09 23:32:20 TRACE ConnectionUtil:56 - Query executed successfully.
+2018-03-09 23:32:50 TRACE ConnectionUtil:45 - Getting all User
+2018-03-09 23:32:51 TRACE ConnectionUtil:49 - Getting statement object in get all celebrities.
+2018-03-09 23:32:51 TRACE ConnectionUtil:56 - Query executed successfully.
+2018-03-09 23:32:51 TRACE ConnectionUtil:59 - CustID inserted correctly
+2018-03-09 23:33:02 TRACE ConnectionUtil:16 - Getting balance.
+2018-03-09 23:33:02 TRACE ConnectionUtil:20 - Connection Successful
+2018-03-09 23:33:04 TRACE ConnectionUtil:40 - Changing balance.
+2018-03-09 23:33:04 TRACE ConnectionUtil:45 - Connection successful
+2018-03-09 23:33:04 TRACE ConnectionUtil:59 - Adding withdrawl transaction.
+2018-03-09 23:33:04 TRACE ConnectionUtil:65 - Connection successful
+2018-03-09 23:33:04 TRACE ConnectionUtil:74 - Statement prepared successfully
+2018-03-09 23:33:05 TRACE ConnectionUtil:77 - Successful transaction update.
+2018-03-09 23:35:40 TRACE ConnectionUtil:45 - Getting all User
+2018-03-09 23:35:40 TRACE ConnectionUtil:49 - Getting statement object in get all celebrities.
+2018-03-09 23:35:41 TRACE ConnectionUtil:56 - Query executed successfully.
+2018-03-09 23:35:41 TRACE ConnectionUtil:59 - CustID inserted correctly
+2018-03-09 23:35:47 TRACE ConnectionUtil:16 - Getting balance.
+2018-03-09 23:35:48 TRACE ConnectionUtil:20 - Connection Successful
+2018-03-09 23:35:50 TRACE ConnectionUtil:40 - Changing balance.
+2018-03-09 23:35:50 TRACE ConnectionUtil:45 - Connection successful
+2018-03-09 23:35:50 TRACE ConnectionUtil:59 - Adding deposit transaction.
+2018-03-09 23:35:51 TRACE ConnectionUtil:65 - Connection successful
+2018-03-09 23:35:51 TRACE ConnectionUtil:74 - Statement prepared successfully
+2018-03-09 23:35:51 TRACE ConnectionUtil:77 - Successful transaction update.
+2018-03-10 00:08:57 TRACE ConnectionUtil:45 - Getting all User
+2018-03-10 00:08:58 TRACE ConnectionUtil:49 - Getting statement object in get all celebrities.
+2018-03-10 00:08:59 TRACE ConnectionUtil:56 - Query executed successfully.
+2018-03-10 00:08:59 TRACE ConnectionUtil:59 - CustID inserted correctly
+2018-03-10 00:09:01 TRACE ConnectionUtil:110 - Getting all Celebrities
+2018-03-10 00:09:01 TRACE ConnectionUtil:114 - Getting statement object in get all celebrities.
+2018-03-10 00:15:55 TRACE ConnectionUtil:45 - Getting all User
+2018-03-10 00:15:56 TRACE ConnectionUtil:49 - Getting statement object in get all celebrities.
+2018-03-10 00:15:56 TRACE ConnectionUtil:56 - Query executed successfully.
+2018-03-10 00:15:56 TRACE ConnectionUtil:59 - CustID inserted correctly
+2018-03-10 00:15:58 TRACE ConnectionUtil:110 - Getting all Celebrities
+2018-03-10 00:15:58 TRACE ConnectionUtil:114 - Getting statement object in get all celebrities.
+2018-03-10 00:16:57 TRACE ConnectionUtil:45 - Getting all User
+2018-03-10 00:16:58 TRACE ConnectionUtil:49 - Getting statement object in get all celebrities.
+2018-03-10 00:16:58 TRACE ConnectionUtil:56 - Query executed successfully.
+2018-03-10 00:16:58 TRACE ConnectionUtil:59 - CustID inserted correctly
+2018-03-10 00:17:00 TRACE ConnectionUtil:110 - Getting all Celebrities
+2018-03-10 00:17:00 TRACE ConnectionUtil:114 - Getting statement object in get all celebrities.

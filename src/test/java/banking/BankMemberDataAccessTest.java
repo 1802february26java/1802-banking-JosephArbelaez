@@ -7,6 +7,7 @@ import org.junit.Test;
 
 import com.revature.controller.Login;
 import com.revature.controller.Transactions;
+import com.revature.exception.InputException;
 import com.revature.exception.LoginException;
 import com.revature.repository.BankMemberRepositoryJbdc;
 
@@ -42,19 +43,19 @@ public class BankMemberDataAccessTest {
 	 * Check Balance Tests
 	 *********************************************************/
 	@Test
-	public void checkBalance22(){
+	public void checkBalance22() throws InputException{
 		Object expected = 0.0;
 		assertEquals(expected, Transactions.viewBalance(22));
 	}
 	
 	@Test
-	public void checkBalance21(){
+	public void checkBalance21() throws InputException{
 		Object expected = 0.0;
 		assertEquals(expected, Transactions.viewBalance(21));
 	}
 	
 	@Test
-	public void checkBalance41(){
+	public void checkBalance41() throws InputException{
 		Object expected = 61.0;
 		assertEquals(expected, Transactions.viewBalance(41));
 	}

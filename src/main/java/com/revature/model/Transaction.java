@@ -7,7 +7,7 @@ public class Transaction {
 	String transactionType;	
 	double previousBalance;
 	double currentBalance;
-	
+
 	public Transaction(){}
 
 	public Transaction(int transactionID, String transactionDate, String transactionType, double previousBalance,

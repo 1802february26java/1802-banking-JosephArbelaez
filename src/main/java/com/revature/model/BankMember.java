@@ -7,9 +7,9 @@ public class BankMember {
 	String userName;
 	String password;
 	double balance;
-	
+
 	public BankMember(){};
-	
+
 	public BankMember(int accountNum, String firstName, String lastName, String userName, String password,
 			double balance) {
 		super();
@@ -125,7 +125,7 @@ public class BankMember {
 		return "BankMember [accountNum=" + accountNum + ", firstName=" + firstName + ", lastName=" + lastName
 				+ ", userName=" + userName + ", password=" + password + ", balance=" + balance + "]";
 	}
-	
+
 
 }
 

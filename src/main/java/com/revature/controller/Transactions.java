@@ -1,13 +1,13 @@
 package com.revature.controller;
 
-import java.util.LinkedList;
-import java.util.List;
 import java.util.Scanner;
+
+import com.revature.exception.InputException;
 
 public class Transactions {
 
 	static Scanner scanner = new Scanner(System.in);
-	
+
 	public static int option(){
 		System.out.println("*~*~*~*~*~*Arbelaez Bank*~*~*~*~*~*");
 		System.out.println("Welcome!");
@@ -18,10 +18,10 @@ public class Transactions {
 		System.out.println("View Balance = 3");
 		System.out.println("View Transactions = 4");
 		int option = scanner.nextInt();
-		
+
 		return option;
 	}
-	public static void withdrawl(int custID){
+	public static void withdrawl(int custID)throws InputException{
 		double balance = Database.recallBalance(custID);
 		System.out.println("*~*~*~*~*~*Arbelaez Bank*~*~*~*~*~*");
 		System.out.println("Current Balance: " + balance);
@@ -37,15 +37,15 @@ public class Transactions {
 		System.out.println("");
 		System.out.println("Thank you for visiting Arbelaez Bank!");
 	}
-	
-	public static void deposit(int custID){
+
+	public static void deposit(int custID) throws InputException{
 		double balance = Database.recallBalance(custID);
 		System.out.println("*~*~*~*~*~*Arbelaez Bank*~*~*~*~*~*");
 		System.out.println("Current Balance: " + balance);
 		System.out.println("");
 		System.out.println("How much would you like to deposit?");
 		double amount = scanner.nextDouble();
-	
+
 		double newAmount = (balance + amount);
 		Database.newBalance(custID,newAmount);
 		Database.depositTransaction(custID, balance, newAmount);
@@ -54,12 +54,17 @@ public class Transactions {
 		System.out.println("");
 		System.out.println("Thank you for visiting Arbelaez Bank!");
 	}
-	
-	public static double viewBalance(int custID){
-		double balance = Database.recallBalance(custID);
+
+	public static double viewBalance(int custID) throws InputException{
+		double balance;
+		try{
+			balance = Database.recallBalance(custID);
+		} catch (InputException e){
+			throw new InputException("Unable to recallBalance");
+		}
 		System.out.println("*~*~*~*~*~*Arbelaez Bank*~*~*~*~*~*");
 		System.out.println("Current Balance: " + balance);
 		return balance;
 	}
-	
+
 }

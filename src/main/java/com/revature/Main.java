@@ -6,6 +6,7 @@ import java.util.Scanner;
 import com.revature.controller.Database;
 import com.revature.controller.Login;
 import com.revature.controller.Transactions;
+import com.revature.exception.InputException;
 import com.revature.exception.LoginException;
 import com.revature.model.BankMember;
 /** 
@@ -15,28 +16,29 @@ import com.revature.model.BankMember;
  */
 public class Main {
 
-	public static void main(String[] args) throws LoginException {
+	public static void main(String[] args) throws LoginException, InputException {
+		// Variables
 		Scanner scanner = new Scanner(System.in);
+		int custID;
 		// Ask the user if they have an account.
-
 		String c = Login.createAccount();
 
-		// Great! If they said yes then they continue, if
-		// no, they have to create an account.
-
+		/* 	
+		 * Great! If they said yes then they continue, if
+		 * 	no, they have to create an account.
+		 */
 		if (c.contains("n")){
 			Login.newAccount();
 		}
 
 		// Either way they have to log in.
-		int custID;
 		try {
 			custID = Login.login();
 		} catch (LoginException e) {
 			throw new LoginException("Unable to login.");
 		}
 
-		// They select an transaction option.
+		// The customer selects an transaction option.
 		int d = Transactions.option();
 
 		// Now to the money, honey!

@@ -371,3 +371,104 @@ java.sql.SQLIntegrityConstraintViolationException: ORA-01400: cannot insert NULL
 2018-03-12 07:41:20 TRACE ConnectionUtil:44 - Getting all User
 2018-03-12 07:56:22 TRACE ConnectionUtil:44 - Getting all User
 2018-03-12 07:56:45 TRACE ConnectionUtil:44 - Getting all User
+2018-03-12 08:11:53 TRACE ConnectionUtil:44 - Getting all User
+2018-03-12 08:11:55 TRACE ConnectionUtil:48 - Getting statement object in get all celebrities.
+2018-03-12 08:11:56 TRACE ConnectionUtil:55 - Query executed successfully.
+2018-03-12 08:11:56 TRACE ConnectionUtil:58 - CustID inserted correctly
+2018-03-12 08:12:00 TRACE ConnectionUtil:20 - Getting balance.
+2018-03-12 08:12:00 TRACE ConnectionUtil:24 - Connection Successful
+2018-03-12 08:12:03 TRACE ConnectionUtil:44 - Changing balance.
+2018-03-12 08:12:03 TRACE ConnectionUtil:49 - Connection successful
+2018-03-12 08:12:03 TRACE ConnectionUtil:87 - Adding withdrawl transaction.
+2018-03-12 08:12:03 TRACE ConnectionUtil:93 - Connection successful
+2018-03-12 08:12:03 TRACE ConnectionUtil:102 - Statement prepared successfully
+2018-03-12 08:12:03 TRACE ConnectionUtil:105 - Successful transaction update.
+2018-03-12 08:12:12 TRACE ConnectionUtil:44 - Getting all User
+2018-03-12 08:12:12 TRACE ConnectionUtil:48 - Getting statement object in get all celebrities.
+2018-03-12 08:12:13 TRACE ConnectionUtil:55 - Query executed successfully.
+2018-03-12 08:12:13 TRACE ConnectionUtil:58 - CustID inserted correctly
+2018-03-12 08:12:15 TRACE ConnectionUtil:20 - Getting balance.
+2018-03-12 08:12:15 TRACE ConnectionUtil:24 - Connection Successful
+2018-03-12 08:12:17 TRACE ConnectionUtil:44 - Changing balance.
+2018-03-12 08:12:17 TRACE ConnectionUtil:49 - Connection successful
+2018-03-12 08:12:17 TRACE ConnectionUtil:63 - Adding deposit transaction.
+2018-03-12 08:12:17 TRACE ConnectionUtil:69 - Connection successful
+2018-03-12 08:12:17 TRACE ConnectionUtil:78 - Statement prepared successfully
+2018-03-12 08:12:17 TRACE ConnectionUtil:81 - Successful transaction update.
+2018-03-12 08:12:30 TRACE ConnectionUtil:44 - Getting all User
+2018-03-12 08:12:31 TRACE ConnectionUtil:48 - Getting statement object in get all celebrities.
+2018-03-12 08:12:31 TRACE ConnectionUtil:55 - Query executed successfully.
+2018-03-12 08:12:31 TRACE ConnectionUtil:58 - CustID inserted correctly
+2018-03-12 08:12:33 TRACE ConnectionUtil:20 - Getting balance.
+2018-03-12 08:12:33 TRACE ConnectionUtil:24 - Connection Successful
+2018-03-12 08:12:41 TRACE ConnectionUtil:44 - Getting all User
+2018-03-12 08:12:41 TRACE ConnectionUtil:48 - Getting statement object in get all celebrities.
+2018-03-12 08:12:41 TRACE ConnectionUtil:55 - Query executed successfully.
+2018-03-12 08:12:41 TRACE ConnectionUtil:58 - CustID inserted correctly
+2018-03-12 08:12:44 TRACE ConnectionUtil:111 - Getting all Transactions
+2018-03-12 09:52:29 TRACE ConnectionUtil:20 - Getting balance.
+2018-03-12 09:52:30 TRACE ConnectionUtil:24 - Connection Successful
+2018-03-12 09:52:30 TRACE ConnectionUtil:20 - Getting balance.
+2018-03-12 09:52:30 TRACE ConnectionUtil:24 - Connection Successful
+2018-03-12 09:52:30 TRACE ConnectionUtil:20 - Getting balance.
+2018-03-12 09:52:30 TRACE ConnectionUtil:24 - Connection Successful
+2018-03-12 09:52:30 TRACE ConnectionUtil:44 - Getting all User
+2018-03-12 09:52:31 TRACE ConnectionUtil:48 - Getting statement object in get all celebrities.
+2018-03-12 09:52:31 TRACE ConnectionUtil:55 - Query executed successfully.
+2018-03-12 09:52:31 TRACE ConnectionUtil:58 - CustID inserted correctly
+2018-03-12 09:52:31 TRACE ConnectionUtil:44 - Getting all User
+2018-03-12 09:52:31 TRACE ConnectionUtil:48 - Getting statement object in get all celebrities.
+2018-03-12 09:52:31 TRACE ConnectionUtil:55 - Query executed successfully.
+2018-03-12 09:52:31 TRACE ConnectionUtil:58 - CustID inserted correctly
+2018-03-12 09:52:31 TRACE ConnectionUtil:44 - Getting all User
+2018-03-12 09:52:31 TRACE ConnectionUtil:48 - Getting statement object in get all celebrities.
+2018-03-12 09:52:31 TRACE ConnectionUtil:55 - Query executed successfully.
+2018-03-12 09:52:31 TRACE ConnectionUtil:58 - CustID inserted correctly
+2018-03-12 09:54:33 TRACE ConnectionUtil:20 - Getting balance.
+2018-03-12 09:54:34 TRACE ConnectionUtil:24 - Connection Successful
+2018-03-12 09:54:34 TRACE ConnectionUtil:20 - Getting balance.
+2018-03-12 09:54:34 TRACE ConnectionUtil:24 - Connection Successful
+2018-03-12 09:54:34 TRACE ConnectionUtil:20 - Getting balance.
+2018-03-12 09:54:35 TRACE ConnectionUtil:24 - Connection Successful
+2018-03-12 09:54:35 TRACE ConnectionUtil:44 - Getting all User
+2018-03-12 09:54:35 TRACE ConnectionUtil:48 - Getting statement object in get all celebrities.
+2018-03-12 09:54:35 TRACE ConnectionUtil:55 - Query executed successfully.
+2018-03-12 09:54:35 TRACE ConnectionUtil:58 - CustID inserted correctly
+2018-03-12 09:54:35 TRACE ConnectionUtil:44 - Getting all User
+2018-03-12 09:54:35 TRACE ConnectionUtil:48 - Getting statement object in get all celebrities.
+2018-03-12 09:54:35 TRACE ConnectionUtil:55 - Query executed successfully.
+2018-03-12 09:54:35 TRACE ConnectionUtil:58 - CustID inserted correctly
+2018-03-12 09:54:35 TRACE ConnectionUtil:44 - Getting all User
+2018-03-12 09:54:35 TRACE ConnectionUtil:48 - Getting statement object in get all celebrities.
+2018-03-12 09:54:35 TRACE ConnectionUtil:55 - Query executed successfully.
+2018-03-12 09:54:35 TRACE ConnectionUtil:58 - CustID inserted correctly
+2018-03-12 09:54:53 TRACE ConnectionUtil:44 - Getting all User
+2018-03-12 09:54:54 TRACE ConnectionUtil:48 - Getting statement object in get all celebrities.
+2018-03-12 09:54:54 TRACE ConnectionUtil:55 - Query executed successfully.
+2018-03-12 09:56:46 TRACE ConnectionUtil:44 - Getting all User
+2018-03-12 09:56:47 TRACE ConnectionUtil:48 - Getting statement object in get all celebrities.
+2018-03-12 09:56:47 TRACE ConnectionUtil:55 - Query executed successfully.
+2018-03-12 09:57:04 TRACE ConnectionUtil:44 - Getting all User
+2018-03-12 09:57:05 TRACE ConnectionUtil:48 - Getting statement object in get all celebrities.
+2018-03-12 09:57:05 TRACE ConnectionUtil:55 - Query executed successfully.
+2018-03-12 09:57:05 TRACE ConnectionUtil:58 - CustID inserted correctly
+2018-03-12 10:00:01 TRACE ConnectionUtil:44 - Getting all User
+2018-03-12 10:00:02 TRACE ConnectionUtil:48 - Getting statement object in get all celebrities.
+2018-03-12 10:00:02 TRACE ConnectionUtil:55 - Query executed successfully.
+2018-03-12 10:00:02 TRACE ConnectionUtil:58 - CustID inserted correctly
+2018-03-12 10:00:20 TRACE ConnectionUtil:44 - Getting all User
+2018-03-12 10:00:21 TRACE ConnectionUtil:48 - Getting statement object in get all celebrities.
+2018-03-12 10:00:21 TRACE ConnectionUtil:55 - Query executed successfully.
+2018-03-12 10:00:21 TRACE ConnectionUtil:58 - CustID inserted correctly
+2018-03-12 10:00:58 TRACE ConnectionUtil:44 - Getting all User
+2018-03-12 10:00:59 TRACE ConnectionUtil:48 - Getting statement object in get all celebrities.
+2018-03-12 10:00:59 TRACE ConnectionUtil:55 - Query executed successfully.
+2018-03-12 10:00:59 TRACE ConnectionUtil:58 - CustID inserted correctly
+2018-03-12 10:02:12 TRACE ConnectionUtil:44 - Getting all User
+2018-03-12 10:02:13 TRACE ConnectionUtil:48 - Getting statement object in get all celebrities.
+2018-03-12 10:02:13 TRACE ConnectionUtil:55 - Query executed successfully.
+2018-03-12 10:02:13 TRACE ConnectionUtil:58 - CustID inserted correctly
+2018-03-12 10:03:58 TRACE ConnectionUtil:44 - Getting all User
+2018-03-12 10:03:59 TRACE ConnectionUtil:48 - Getting statement object in get all celebrities.
+2018-03-12 10:03:59 TRACE ConnectionUtil:55 - Query executed successfully.
+2018-03-12 10:03:59 TRACE ConnectionUtil:58 - CustID inserted correctly

@@ -38,6 +38,9 @@ public class Login {
 		
 		try {
 			custID = repository.recallUser(userCredentials[0], userCredentials[1]);
+			if (custID == 0){
+				throw new LoginException("Login Failed");
+			}
 		} catch (LoginException e) {
 			throw new LoginException("Login Failed.");
 		}

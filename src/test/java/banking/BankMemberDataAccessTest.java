@@ -16,18 +16,18 @@ public class BankMemberDataAccessTest {
 	private static final Transactions transactions = new Transactions();
 	private static final Login loginClass = new Login();
 	private static Logger logger = Logger.getLogger(BankMemberDataAccessTest.class);
-	
+
 	/*********************************************************
 	 * Detecting Users Tests
 	 * @throws LoginException 
 	 *********************************************************/
-	
+
 	@Test
 	public void checkUser22() throws LoginException{
 		Object expected = 22;
 		assertEquals(expected, BankMemberRepositoryJbdc.recallUser("Xeroph", "Arbelaez"));
 	}
-	
+
 	@Test
 	public void checkUser41() throws LoginException{
 		Object expected = 41;
@@ -38,7 +38,7 @@ public class BankMemberDataAccessTest {
 		Object expected = 21;
 		assertEquals(expected, BankMemberRepositoryJbdc.recallUser("j", "j"));
 	}
-	
+
 	/*********************************************************
 	 * Check Balance Tests
 	 *********************************************************/
@@ -47,13 +47,13 @@ public class BankMemberDataAccessTest {
 		Object expected = 0.0;
 		assertEquals(expected, Transactions.viewBalance(22));
 	}
-	
+
 	@Test
 	public void checkBalance21() throws InputException{
 		Object expected = 0.0;
 		assertEquals(expected, Transactions.viewBalance(21));
 	}
-	
+
 	@Test
 	public void checkBalance41() throws InputException{
 		Object expected = 61.0;

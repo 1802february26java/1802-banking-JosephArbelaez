@@ -12,13 +12,13 @@ public class ConnectionUtil {
 		String url = "jdbc:oracle:thin:@josepharbelaezrevature.c5dmvhjfs1dd.us-east-1.rds.amazonaws.com:1521:ORCL";
 		String username = "JosephArbelaez";
 		String password = "Miroku031890!";
-		
+
 		return DriverManager.getConnection(url, username, password);
 	}
-	
+
 	public static void main(String[] args){
 		// Try with resources automatic
-		
+
 		// Classes in this kind of try need to implement AutoCloseable
 		try(Connection connection = ConnectionUtil.getConnection()){
 			logger.info("Connection Successful!");

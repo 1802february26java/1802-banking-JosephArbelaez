@@ -8,7 +8,7 @@ public class Transactions {
 
 	static Scanner scanner = new Scanner(System.in);
 
-	public static int option(){
+	public static int option() throws InputException{
 		System.out.println("*~*~*~*~*~*Arbelaez Bank*~*~*~*~*~*");
 		System.out.println("Welcome!");
 		System.out.println("What would you like to do today? Type the number of the choice.");
@@ -17,8 +17,12 @@ public class Transactions {
 		System.out.println("Deposit = 2");
 		System.out.println("View Balance = 3");
 		System.out.println("View Transactions = 4");
+		
 		int option = scanner.nextInt();
-
+		if (option > 4){
+			throw new InputException("Must enter either 1, 2, 3 or 4.");
+		}
+		
 		return option;
 	}
 	public static void withdrawl(int custID)throws InputException{

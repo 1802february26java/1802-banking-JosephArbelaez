@@ -472,3 +472,27 @@ java.sql.SQLIntegrityConstraintViolationException: ORA-01400: cannot insert NULL
 2018-03-12 10:03:59 TRACE ConnectionUtil:48 - Getting statement object in get all celebrities.
 2018-03-12 10:03:59 TRACE ConnectionUtil:55 - Query executed successfully.
 2018-03-12 10:03:59 TRACE ConnectionUtil:58 - CustID inserted correctly
+2018-03-12 10:04:09 TRACE ConnectionUtil:44 - Getting all User
+2018-03-12 10:04:09 TRACE ConnectionUtil:48 - Getting statement object in get all celebrities.
+2018-03-12 10:04:10 TRACE ConnectionUtil:55 - Query executed successfully.
+2018-03-12 10:04:10 TRACE ConnectionUtil:58 - CustID inserted correctly
+2018-03-12 10:04:10 TRACE ConnectionUtil:20 - Getting balance.
+2018-03-12 10:04:11 TRACE ConnectionUtil:24 - Connection Successful
+2018-03-12 10:09:05 TRACE ConnectionUtil:44 - Getting all User
+2018-03-12 10:09:06 TRACE ConnectionUtil:48 - Getting statement object in get all celebrities.
+2018-03-12 10:09:06 TRACE ConnectionUtil:55 - Query executed successfully.
+2018-03-12 10:09:06 TRACE ConnectionUtil:58 - CustID inserted correctly
+2018-03-12 10:09:08 TRACE ConnectionUtil:20 - Getting balance.
+2018-03-12 10:09:08 TRACE ConnectionUtil:24 - Connection Successful
+2018-03-12 11:04:00 TRACE ConnectionUtil:44 - Getting all User
+2018-03-12 11:04:00 TRACE ConnectionUtil:48 - Getting statement object in get all celebrities.
+2018-03-12 11:04:01 TRACE ConnectionUtil:55 - Query executed successfully.
+2018-03-12 11:04:01 TRACE ConnectionUtil:58 - CustID inserted correctly
+2018-03-12 11:04:02 TRACE ConnectionUtil:20 - Getting balance.
+2018-03-12 11:04:02 TRACE ConnectionUtil:24 - Connection Successful
+2018-03-12 11:04:05 TRACE ConnectionUtil:44 - Changing balance.
+2018-03-12 11:04:05 TRACE ConnectionUtil:49 - Connection successful
+2018-03-12 11:04:05 TRACE ConnectionUtil:87 - Adding withdrawl transaction.
+2018-03-12 11:04:05 TRACE ConnectionUtil:93 - Connection successful
+2018-03-12 11:04:05 TRACE ConnectionUtil:102 - Statement prepared successfully
+2018-03-12 11:04:05 TRACE ConnectionUtil:105 - Successful transaction update.

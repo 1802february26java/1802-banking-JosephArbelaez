@@ -19,7 +19,7 @@ public class Transactions {
 		System.out.println("View Transactions = 4");
 		
 		int option = scanner.nextInt();
-		if (option > 4){
+		if (option > 4 || option < 1){
 			throw new InputException("Must enter either 1, 2, 3 or 4.");
 		}
 		
